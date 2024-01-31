@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <!-- Styles -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            color: #555;
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .otp-class {
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .otp-class :hover {
+            text-decoration: underline;
+        }
+        
+        a{
+        display:block;
+        text-align:Left; 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Login Form Container -->
+    <div class="container">
+        <h2>Login</h2>
+
+        <!-- Login Form -->
+        <form action="login" method="post">
+
+            <!-- Username Field -->
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <a class="otp-class" href="otp.jsp">Forgot password?</a>
+            <br>
+
+            <!-- Submit Button -->
+            <button type="submit">Login</button>
+            
+            <!-- Forgot Password Link -->
+            
+        </form>
+    </div>
+</body>
+
+</html>

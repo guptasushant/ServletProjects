@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>WebFirst1</display-name>
+	<welcome-file-list>
+		<welcome-file>bank.html</welcome-file>
+		<welcome-file>update.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>myservlet</servlet-name>
+		<servlet-class>com.web.bankcontroller.BankController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myservlet</servlet-name>
+		<url-pattern>/RegisterBank</url-pattern>
+		<url-pattern>/deleteServlet</url-pattern>
+		<url-pattern>/fetchServlet</url-pattern>
+<!--  	<url-pattern>/updateServlet</url-pattern>-->
+	</servlet-mapping>
+</web-app>
